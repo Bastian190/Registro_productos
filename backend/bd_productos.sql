@@ -41,4 +41,4 @@ CREATE TABLE producto_materiales (
 INSERT INTO bodegas (nombre) VALUES ('Bodega Central'), ('Bodega Norte');
 INSERT INTO sucursales (bodega_id, nombre) VALUES (1,'Sucursal La Cruz'), (1,'Sucursal La Calera'), (2,'Sucursal Quillota');
 INSERT INTO monedas (codigo, nombre) VALUES ('CLP','Peso Chileno'), ('USD','Dólar');
-INSERT INTO materiales (nombre) VALUES ('Cuero'), ('Poliéster'), ('Nailon'), ('Algodón');
+INSERT INTO materiales (nombre) VALUES ('Plastico'), ('Metal'), ('Madera'), ('Vidrio'), ('Textil');
