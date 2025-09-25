@@ -13,12 +13,13 @@ Paso 2
 - Crear las tablas mediante el script dejado en el proyecto, esto copiando el script del archivo bd_productos.sql para luego irnos a pgAdmin4 dar click derecho a la base de datos y seleccionando la opción Query_tool para luego pegar el script y ejecutar.
 
 Paso 3
-- Verificar que PHP pueda usar la base de datos, esto abriendo el cmd y poniendo php -m.
+- Verificar que PHP pueda usar la base de datos, esto abriendo el cmd y poniendo -c C:\php\php.ini-development -m.
 - En caso de no aparecer ir a la carpeta raíz de php, buscar php.ini-development abrirlo y quitar la ; a esta dos opciones ;extension=pgsql ;extension=pdo_pgsql para asi habilitar las extensiones.
-- Verificar nuevamente con el comando php -m y buscar que esten esas extensiones en la lista.
+- Luego reiniciar el servidor php con comando php -S localhost:8000 y luego ctrl + c.
+- Verificar nuevamente con el comando -c C:\php\php.ini-development -m y buscar que esten esas extensiones en la lista.
 
 Paso 4
 - Abrir el servidor con php en la cmd
 - ejecutamos el comando cd "ubicación de la carpeta de proyecto" ej: cd C:\Users\Bastian\Desktop\Registro_productos
-- Luego ejecutamos el comando php -S localhost:8000 que abrirá un servidor localhost de php que alojará la pagina web 
+- Luego ejecutamos el comando php -c C:\php\php.ini-development -S localhost:8000 que abrirá un servidor localhost de php que alojará la pagina web 
 - Abrir la pagina pegando en el navegador http://localhost:8000
