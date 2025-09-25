@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Formulario Producto</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Formulario de Producto</h1>
+    <form id="formulario" class="form-grid">
+      <div class="campo">
+        <label for="codigo">Código</label>
+        <input id="codigo" type="text" maxlength="15">
+      </div>
+
+      <div class="campo">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text" maxlength="50">
+      </div>
+
+      <div class="campo">
+        <label for="bodega">Bodega</label>
+        <select id="bodega">
+          <option value=""></option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="sucursal">Sucursal</label>
+        <select id="sucursal">
+          <option value=""></option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="moneda">Moneda</label>
+        <select id="moneda">
+          <option value=""></option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="precio">Precio</label>
+        <input id="precio" type="text">
+      </div>
+
+      <fieldset class="campo full">
+        <legend>Material del Producto</legend>
+        <div id="lista-materiales" class="materiales">
+          
+        </div>
+      </fieldset>
+
+      <div class="campo full">
+        <label for="descripcion">Descripción</label>
+        <textarea id="descripcion" rows="5" maxlength="1000"></textarea>
+      </div>
+
+      <div class="acciones full">
+        <button id="guardar" type="button">Guardar Producto</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="backend/script.js"></script>
+</body>
+</html>
