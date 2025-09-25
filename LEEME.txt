@@ -22,4 +22,6 @@ Paso 4
 - Abrir el servidor con php en la cmd
 - ejecutamos el comando cd "ubicación de la carpeta de proyecto" ej: cd C:\Users\Bastian\Desktop\Registro_productos
 - Luego ejecutamos el comando php -c C:\php\php.ini-development -S localhost:8000 que abrirá un servidor localhost de php que alojará la pagina web 
-- Abrir la pagina pegando en el navegador http://localhost:8000
+- Abrir la pagina pegando en el navegador http://localhost:8000/Formulario.html
+
+
